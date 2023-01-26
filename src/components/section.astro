@@ -1,0 +1,35 @@
+---
+export interface Props {
+  id?: string;
+}
+const { id } = Astro.props as Props;
+---
+
+<section id={id} class="section">
+  <div class="content">
+    <slot />
+  </div>
+</section>
+
+<style>
+  .section {
+    padding: 4rem 1rem;
+    width: 100%;
+    position: relative;
+  }
+
+  @media screen and (max-width: 756px) {
+    .section {
+      padding: 3rem 1rem;
+    }
+  }
+
+  .section.light {
+    background: var(--color-neutral-light);
+    color: var(--color-neutral-dark);
+  }
+
+  .content {
+    margin: auto;
+  }
+</style>
