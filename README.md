@@ -1,6 +1,6 @@
 # Welcome to [Astro](https://astro.build)
 
-[![Edit in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/github/codesandbox/codesandbox-template-astro/main)
+[![Edit in CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/aviDms/wit)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
