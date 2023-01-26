@@ -1,9 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
+  import Layout from '../layouts/Layout.astro';
+  import Section from "../components/Section.astro";
+
+  import Mission from "../content/mission.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-amber-600">Astro</span></h1>
-	</main>
+  <main>
+    <Section id="mission">
+      <Mission></Mission>
+    </Section>
+  </main>
 </Layout>
