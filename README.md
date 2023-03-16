@@ -46,3 +46,12 @@ All commands are run from the root of the project, from a terminal:
 - [Astro — GitHub](https://github.com/withastro/astro)
 - [Astro — Docs](https://docs.astro.build)
 - [Astro - Discord](https://astro.build/chat)
+
+
+## Local Development
+
+```
+npm install
+
+npm run dev
+```
