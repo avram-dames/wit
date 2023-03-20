@@ -1,0 +1,23 @@
+---
+interface Props {
+  imageSource: string;
+  name: string;
+  ocupation: string;
+  twitterLink: string;
+  linkedinLink: string;
+}
+
+const { imageSource, name, ocupation, twitterLink, linkedinLink } = Astro.props;
+---
+
+<div class="max-w-[200px]">
+  <img src={imageSource} alt={name} />
+  <div class="flex flex-col">
+    <span class="text-2xl font-bold text-[#fa4080]">{name}</span>
+    <span class="text-lg font-light">{ocupation}</span>
+    <span>
+      <a href={twitterLink}>twitter</a>
+      <a href={linkedinLink}>linkedin</a>
+    </span>
+  </div>
+</div>
