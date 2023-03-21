@@ -1,23 +1,22 @@
 ---
-  import Layout from '../layouts/Layout.astro';
-  import Section from "../components/Section.astro";
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/section.astro";
 
-  import Mission from "../sections/mission.astro";
-  import Banner from "../sections/banner.astro";
-  import Members from '../sections/members.astro';
-  import Partners from '../sections/partners.astro';
-  import Footer from '../sections/footer.astro';
+import Mission from "../sections/mission.astro";
+import Banner from "../sections/banner.astro";
+import Members from "../sections/members.astro";
+import Partners from "../sections/partners.astro";
+import Footer from "../sections/footer.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
     <Section id="mission">
-      <Banner></Banner>
-      <Mission></Mission>
-      <Members></Members>
-      <Partners></Partners>
-      
+      <Banner />
+      <Mission />
+      <Members />
+      <Partners />
     </Section>
-    <Footer></Footer>
+    <Footer />
   </main>
 </Layout>
