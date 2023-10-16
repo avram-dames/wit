@@ -4,6 +4,7 @@ export interface Props {
 }
 
 const { title } = Astro.props as Props;
+const description = ''
 ---
 
 <!DOCTYPE html>
@@ -14,6 +15,7 @@ const { title } = Astro.props as Props;
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content={description} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

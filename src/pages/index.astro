@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import Section from "../components/section.astro";
 
 import Mission from "../sections/mission.astro";
@@ -9,7 +9,7 @@ import Partners from "../sections/partners.astro";
 import Footer from "../sections/footer.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<BaseLayout title="Women in Tech Cluj">
   <main>
     <Section id="mission">
       <Banner />
@@ -19,4 +19,4 @@ import Footer from "../sections/footer.astro";
     </Section>
     <Footer />
   </main>
-</Layout>
+</BaseLayout>
