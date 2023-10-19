@@ -1,21 +1,20 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/section.astro";
+import Section from "../components/Section.astro";
 
 import Mission from "../sections/mission.astro";
-import Banner from "../sections/banner.astro";
+import Hero from "../sections/hero.astro";
 import Members from "../sections/members.astro";
 import Partners from "../sections/partners.astro";
-
 ---
 
 <BaseLayout title="Women in Tech Cluj">
   <main>
-    <!-- <Section id="mission">
-      <Banner />
-      <Mission />
-      <Members />
-      <Partners />
-    </Section> -->
+    <Section id="mission">
+      <Hero />
+      <!-- <Mission /> -->
+      <!-- <Members /> -->
+      <!-- <Partners /> -->
+    </Section>
   </main>
 </BaseLayout>

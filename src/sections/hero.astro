@@ -1,0 +1,31 @@
+---
+import { getImage } from "astro:assets";
+import heroMobile from "./images/hero-mobile.jpg";
+
+const heroBackground = await getImage({ src: heroMobile, format: "avif" });
+---
+
+<div class="flex w-full flex-col items-center justify-center">
+  <div
+    style={`background-image: url(${heroBackground.src});`}
+    class="bg-slate-600 w-full bg-cover bg-center pt-[100px] pb-[100px] bg-blend-soft-light"
+  >
+    <div
+      class="text-white w-full h-full flex flex-col md:items-center space-y-8"
+    >
+      <div class="flex flex-col md:flex-row space-y-2">
+        <h1 class="text-4xl md:text-8xl font-extrabold">Women in Tech</h1>
+        <span class="text-4xl font-extralight">Cluj</span>
+      </div>
+
+      <div class="flex flex-col space-y-4">
+        <div class="bg-pink-500 w-[50px] h-[3px]"></div>
+        <div>
+          <h2 class="text-3xl font-light">
+            Learn. Share. Support. Empower. Create awareness
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
