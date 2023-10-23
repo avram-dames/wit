@@ -1,20 +1,20 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Section from "../components/Section.astro";
 
 import Mission from "../sections/mission.astro";
 import Hero from "../sections/hero.astro";
 import Members from "../sections/members.astro";
 import Partners from "../sections/partners.astro";
+import Meetups from "../sections/meetups.astro";
+
+import { meetups } from "../data/meetups";
 ---
 
 <BaseLayout title="Women in Tech Cluj">
   <main>
-    <Section id="mission">
-      <Hero />
-      <!-- <Mission /> -->
-      <!-- <Members /> -->
-      <!-- <Partners /> -->
-    </Section>
+    <Hero />
+    {meetups.length > 0 && <Meetups meetups={meetups}/>}
+    <!-- <Members /> -->
+    <!-- <Partners /> -->
   </main>
 </BaseLayout>
