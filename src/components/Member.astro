@@ -1,0 +1,22 @@
+---
+import type { Member } from "../data/types";
+
+
+export interface Props {
+  member: Member;
+}
+
+const { member } = Astro.props as Props;
+---
+
+<div class="max-w-[200px]">
+  <img src={member.imageSource} alt={member.name} class=""/>
+  <div class="mt-4 flex flex-col space-y-2 items-center">
+    <span class="text-2xl font-bold text-[#fa4080]">{member.name}</span>
+    <span class="text-lg font-light">{member.ocupation}</span>
+    <span>
+      <a href={member.twitterLink}>twitter</a> | 
+      <a href={member.linkedinLink}>linkedin</a>
+    </span>
+  </div>
+</div>
