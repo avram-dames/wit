@@ -8,6 +8,7 @@ import Partners from "../sections/partners.astro";
 import Meetups from "../sections/meetups.astro";
 
 import { meetups } from "../data/meetups";
+import { members } from "../data/members";
 ---
 
 <BaseLayout title="Women in Tech Cluj">
@@ -15,7 +16,7 @@ import { meetups } from "../data/meetups";
     <Hero />
     {meetups.length > 0 && <Meetups meetups={meetups} />}
     <Mission />
-    <!-- <Members /> -->
+    <Members members={members} />
     <!-- <Partners /> -->
   </main>
 </BaseLayout>

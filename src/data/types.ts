@@ -6,3 +6,11 @@ export type Meetup = {
   location?: string,
   description: string[];
 };
+
+export type Member = {
+  imageSource: string;
+  name: string;
+  ocupation: string;
+  twitterLink: string;
+  linkedinLink: string;
+};
