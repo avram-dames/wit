@@ -1,0 +1,14 @@
+---
+import type { Partner } from "../data/types";
+
+
+export interface Props {
+  partner: Partner;
+}
+
+const { partner } = Astro.props as Props;
+---
+
+<div class="max-w-[200px]">
+  <img src={`partner-logos/${partner.imageSource}`} alt={partner.name} />
+</div>

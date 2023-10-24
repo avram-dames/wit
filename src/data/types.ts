@@ -14,3 +14,9 @@ export type Member = {
   twitterLink: string;
   linkedinLink: string;
 };
+
+export type Partner = {
+  imageSource: string;
+  name: string;
+  url: string;
+};

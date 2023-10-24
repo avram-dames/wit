@@ -9,6 +9,7 @@ import Meetups from "../sections/meetups.astro";
 
 import { meetups } from "../data/meetups";
 import { members } from "../data/members";
+import { partners } from "../data/partners";
 ---
 
 <BaseLayout title="Women in Tech Cluj">
@@ -17,6 +18,6 @@ import { members } from "../data/members";
     {meetups.length > 0 && <Meetups meetups={meetups} />}
     <Mission />
     <Members members={members} />
-    <!-- <Partners /> -->
+    <Partners partners={partners}/>
   </main>
 </BaseLayout>
