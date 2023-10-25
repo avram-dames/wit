@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import womanVr from '../sections/images/woman-with-vr-headset-mobile.webp'
 ---
 <div class="flex flex-col w-full items-center">
-  <div class="mt-20 px-8 flex flex-col w-full items-start space-y-4">
+  <div class="mt-20 px-8 flex flex-col lg:flex-row w-full items-start space-y-4 lg:justify-between">
     <h1 class="text-3xl lg:text-5xl font-extrabold">Mission & History</h1>
     <div class="bg-pink-500 w-[100px] h-[1.5px]"></div>
     <h2 class="text-[rgb(250,64,128)] text-lg font-light">LEARN. SHARE. SUPPORT. EMPOWER.</h2>
@@ -44,7 +44,7 @@ import womanVr from '../sections/images/woman-with-vr-headset-mobile.webp'
       </p>
     </div>
     <div class="lg:absolute lg:top-80">
-      <Image src={womanVr} alt="A woman wearing a VR headset." class="px-4 bg-[#0c1d39] lg:w-[617px] lg:h-[593px] object-cover object-center"/>
+      <Image src={womanVr} alt="A woman wearing a VR headset." class="px-4 bg-[#0c1d39] lg:bg-transparent lg:w-[617px] lg:h-[593px] object-cover object-center"/>
     </div>
   </div>
 </div>
